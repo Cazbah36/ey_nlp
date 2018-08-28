@@ -1,4 +1,4 @@
-def extract_speaker_monologues(file='wfc.txt'):
+def extract_speaker_monologues(file='./samples/wfc.txt'):
   '''extracts the monologues from an earnings call transcript. attributes speaker to each monologue.
   returns list of executive names, list of analyst names, and dictionary of the monologues'''
 
