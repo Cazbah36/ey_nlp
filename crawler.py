@@ -97,4 +97,4 @@ if __name__ == '__main__':
 			path_time = str(dt.today().split('.')[0])
 			with open("/".join([directory + path_time + 'transcripts.txt']), 'w') as file:
 				file.write(json.dumps(content_dict))
-		content_dict = dict()
+			content_dict = dict()
