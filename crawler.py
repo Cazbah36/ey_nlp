@@ -99,7 +99,7 @@ if __name__ == '__main__':
 	for i, url in enumerate(url_list):
 		content_dict.update(get_content(url))
 		time.sleep(np.random.randint(1,10))
-		if i % 50 == 0:
+		if i % 1 == 0:
 			path_time = str(dt.today()).split('.')[0]
 			with open("/".join([directory + path_time + 'transcripts.txt']), 'w') as file:
 				file.write(json.dumps(content_dict))
