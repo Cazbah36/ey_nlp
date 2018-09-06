@@ -101,6 +101,6 @@ if __name__ == '__main__':
 		time.sleep(np.random.randint(1,10))
 		if i % 1 == 0:
 			path_time = str(dt.today()).split('.')[0]
-			with open(os.path.join(directory, path_time, 'transcripts.txt'), 'w') as file:
+			with open(os.path.join(directory, path_time+' transcripts.txt'), 'w') as file:
 				file.write(json.dumps(content_dict))
 			content_dict = dict()
