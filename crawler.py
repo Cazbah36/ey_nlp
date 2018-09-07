@@ -12,7 +12,7 @@ from datetime import datetime as dt
 """Set Script Options"""
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--incognito")
-chrome_options.add_argument("--headless")  
+# chrome_options.add_argument("--headless")
 driver = webdriver.Chrome(chrome_options=chrome_options)
 driver.get('https://google.com')
 
